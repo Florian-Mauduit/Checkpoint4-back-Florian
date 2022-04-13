@@ -1,0 +1,36 @@
+{
+  "name": "checkpoint4-back-florian",
+  "version": "1.0.0",
+  "description": "Partie back du checkpoint 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Florian-Mauduit/Checkpoint4-back-Florian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Florian-Mauduit/Checkpoint4-back-Florian/issues"
+  },
+  "homepage": "https://github.com/Florian-Mauduit/Checkpoint4-back-Florian#readme",
+  "dependencies": {
+    "argon2": "^0.28.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1",
+    "jest-circus": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
