@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Hello Checkpoint 4 !" });
 });
 
-// app.use("/api", mainRouter);
+app.use("/api", mainRouter);
 
 module.exports = app;
