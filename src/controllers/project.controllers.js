@@ -1,5 +1,6 @@
 const { Project } = require("../models");
 
+// Function qui me permet de vérifier si le nom n'est pas déjà utilisé
 const validateDataCreateProject = async (req, res, next) => {
   const { name, dateProjet } = req.body;
   if (await Project.nameAlreadyExists(name)) {
@@ -7,11 +8,11 @@ const validateDataCreateProject = async (req, res, next) => {
   } else if (!Project.dateAlreadyExist(dateProjet)) {
     res.status(400).send("The date of the project is already");
   } else {
-    console.log(dateProjet);
     next();
   }
 };
 
+// Function qui me permet de crée un nouveau projet avec ça date de création
 const createOneProject = async (req, res, next) => {
   const { name, dateProjet } = req.body;
   try {
@@ -29,6 +30,7 @@ const createOneProject = async (req, res, next) => {
   }
 };
 
+// Function qui me permet de récupérer l'id
 const getOneProjectById = async (req, res) => {
   const { id } = req;
   try {

@@ -2,6 +2,7 @@ const projectRouter = require("express").Router();
 const { Project } = require("../models");
 const { projectController } = require("../controllers");
 
+// Route qui me permet de récupérer un projet avec un id
 projectRouter.get("/:id", async (req, res) => {
   const { id } = req.params;
   try {
